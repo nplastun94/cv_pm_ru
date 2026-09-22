@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Никита Пластун - Project Manager Resume</title>
+    <!-- Подключение шрифта Roboto для лучшей читаемости кириллицы -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --text-main: #1e293b;
+            --text-light: #64748b;
+            --bg-body: #f8fafc;
+            --border: #e2e8f0;
+        }
+
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+
+        body {
+            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.55;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+            padding: 30px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 16px;
+            margin-bottom: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .header-main h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 4px;
+            letter-spacing: -0.01em;
+            line-height: 1.2;
+        }
+
+        .header-main p {
+            font-size: 16px;
+            color: var(--primary);
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 4px;
+            font-size: 13px;
+        }
+
+        a {
+            color: var(--text-main);
+            text-decoration: underline;
+            text-decoration-color: rgba(37, 99, 235, 0.35);
+            text-underline-offset: 3px;
+            transition: all 0.15s ease;
+        }
+
+        a:hover {
+            color: var(--primary);
+            text-decoration-color: var(--primary);
+        }
+
+        @media print {
+            a, a:visited {
+                color: var(--text-main) !important;
+                text-decoration: underline !important;
+                text-decoration-color: #94a3b8 !important;
+                text-decoration-thickness: 1px !important;
+                text-underline-offset: 3px !important;
+            }
+        }
+
+        .section { 
+            margin-bottom: 22px; 
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 12.5px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--primary);
+            letter-spacing: 0.08em;
+            margin-bottom: 12px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 4px;
+        }
+
+        .summary {
+            font-size: 13.5px;
+            color: var(--text-main);
+            line-height: 1.55;
+            text-align: left;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 13px;
+        }
+
+        .skill-item strong { 
+            font-weight: 500; 
+        }
+
+        .experience-item { 
+            margin-bottom: 18px; 
+            break-inside: avoid;
+        }
+
+        .experience-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .education-item-block {
+            margin-bottom: 12px;
+            break-inside: avoid;
+        }
+
+        .education-item-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .exp-header, .edu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .exp-title, .edu-title {
+            font-size: 14.5px;
+            font-weight: 700;
+        }
+
+        .exp-date, .edu-date {
+            font-size: 12px;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .exp-company, .edu-sub {
+            font-size: 12.5px;
+            font-weight: 500;
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 6px;
+        }
+
+        .exp-bullets {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .exp-bullets li {
+            font-size: 13px;
+            margin-bottom: 4px;
+            position: relative;
+            padding-left: 16px;
+            text-align: left;
+            line-height: 1.5;
+        }
+
+        .exp-bullets li:last-child {
+            margin-bottom: 0;
+        }
+
+        .exp-bullets li::before {
+            content: "•";
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="resume-container">
+        <header>
+            <div class="header-main">
+                <h1>Никита Пластун</h1>
+                <p>Project Manager</p>
+            </div>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/nikita-plastun-2a2a90264" target="_blank">LinkedIn Profile</a>
+                <a href="https://t.me/n_plastun" target="_blank">Telegram</a>
+                <a href="mailto:n.plastun94@gmail.com">Email</a>
+            </div>
+        </header>
+
+        <div class="section">
+            <p class="summary">
+                <strong>Project Manager</strong> с опытом более 10 лет в управлении ИТ (B2B SaaS, Web &amp; Mobile) и инфраструктурными проектами. Опыт руководства командами до 60 человек и управления бюджетами до $5M. Специализируюсь на выстраивании прозрачных процессов разработки, повышении маржинальности проектов и ускорении работы команд за счет внедрения современных PM-практик и AI-инструментов.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Навыки и инструменты</h2>
+            <div class="skills-list">
+                <div class="skill-item"><strong>PM &amp; Planning Tools:</strong> Jira, Confluence, MS Project, Google Workspace, Asana, Notion, Miro, Figma</div>
+                <div class="skill-item"><strong>Frameworks:</strong> SDLC, Agile, Hybrid Delivery, Scope &amp; Risk Management, Change Management</div>
+                <div class="skill-item"><strong>Business Operations:</strong> Budgeting, Vendor &amp; Contracts Management, OKRs &amp; Metrics</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Опыт работы</h2>
+
+            <div class="experience-item">
+                <div class="exp-header"><span class="exp-title">Senior Project Manager</span> <span class="exp-date">07/2025 &ndash; 07/2026</span></div>
+                <div class="exp-company">Minerva Soft | Платформа управления знаниями для корпоративного сектора (B2B SaaS)</div>
+                <ul class="exp-bullets">
+                    <li>Управлял проектом с бюджетом <strong>$5M</strong>, обеспечив своевременную передачу заказчику ключевых функций;</li>
+                    <li>Выстроил процесс эскалации багов с нуля, что сократило время их исправления <strong>с 2 месяцев до 2 недель</strong>;</li>
+                    <li>Оптимизировал процессы релизов, снизив количество инцидентов <strong>на 30%</strong>;</li>
+                    <li>Внедрил AI-инструменты, сократив время на еженедельную документацию и отчетность <strong>с 3 часов до ~40 минут</strong>.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-header"><span class="exp-title">Delivery Manager</span> <span class="exp-date">09/2023 &ndash; 07/2025</span></div>
+                <div class="exp-company">aim digital | Агентство заказной веб- и мобильной разработки</div>
+                <ul class="exp-bullets">
+                    <li>Оптимизировал процесс передачи задач от дизайна к разработке, повысив рентабельность проектов <strong>на 23%</strong>;</li>
+                    <li>Сократил время публикации приложений <strong>с 1 месяца до 1 недели</strong> за счет отладки процессов разработки и QA.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-header"><span class="exp-title">Program Manager</span> <span class="exp-date">01/2022 &ndash; 08/2023</span></div>
+                <div class="exp-company">ZTE Corporation | Поставщик телекоммуникационного и сетевого оборудования</div>
+                <ul class="exp-bullets">
+                    <li>Руководил командой из <strong>60+ человек</strong>, завершив инфраструктурный проект <strong>на 2 месяца раньше срока</strong>;</li>
+                    <li>Внедрил стандарты качества для подрядчиков, сократив количество дефектов при приемке <strong>на 60%</strong>.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="exp-header"><span class="exp-title">Telecom &amp; Infrastructure Project Manager</span> <span class="exp-date">2015 &ndash; 01/2022</span></div>
+                <div class="exp-company">МегаФон | Мобильный оператор BIG-4</div>
+                <ul class="exp-bullets">
+                    <li>Руководил организацией мобильной связи к <strong>2018 FIFA World Cup</strong>, обеспечив надежность сети <strong>99.99%</strong>;</li>
+                    <li>Стандартизировал работу с документацией, сократив сроки сдачи коммерческих объектов <strong>на 15%</strong>.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Сертификаты</h2>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <strong><a href="https://coursera.org/share/091e4f8512b8ff1e932cdcef01a6e05b" target="_blank">Google Project Management Professional Certificate</a></strong> &mdash; Google / Coursera (2023)
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Образование</h2>
+            <div class="education-item-block">
+                <div class="edu-header"><span class="edu-title">Уральский федеральный университет</span> <span class="edu-date">2011 &ndash; 2017</span></div>
+                <div class="edu-sub">Бакалавриат и магистратура: Инфокоммуникационные технологии и системы связи</div>
+            </div>
+            <div class="education-item-block">
+                <div class="edu-header"><span class="edu-title">Уральский федеральный университет</span> <span class="edu-date">2016 &ndash; 2017</span></div>
+                <div class="edu-sub">Диплом о профессиональной переподготовке: Экономика и международный менеджмент</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
