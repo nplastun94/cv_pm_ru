@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Никита Пластун - Project Manager Resume</title>
-    <!-- Подключение шрифта Roboto для лучшей читаемости кириллицы -->
+    <title>Никита Пластун - Senior Project Manager Resume</title>
+    <!-- Подключение шрифта Roboto для соответствия стилям -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -45,9 +45,6 @@
             border-bottom: 2px solid var(--primary);
             padding-bottom: 16px;
             margin-bottom: 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
         }
 
         .header-main h1 {
@@ -63,15 +60,19 @@
             font-size: 16px;
             color: var(--primary);
             font-weight: 500;
-            margin-bottom: 0;
+            margin-bottom: 8px;
         }
 
-        .contact-links {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            gap: 4px;
-            font-size: 13px;
+        .location-info {
+            font-size: 13.5px;
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .contact-links span.sep {
+            margin: 0 8px;
+            color: var(--text-light);
+            opacity: 0.6;
         }
 
         a {
@@ -94,6 +95,12 @@
                 text-decoration-color: #94a3b8 !important;
                 text-decoration-thickness: 1px !important;
                 text-underline-offset: 3px !important;
+            }
+
+            .page-break {
+                page-break-before: always;
+                break-before: page;
+                padding-top: 24px;
             }
         }
 
@@ -212,27 +219,25 @@
         <header>
             <div class="header-main">
                 <h1>Никита Пластун</h1>
-                <p>Project Manager</p>
-            </div>
-            <div class="contact-links">
-                <a href="https://www.linkedin.com/in/nikita-plastun-2a2a90264" target="_blank">LinkedIn Profile</a>
-                <a href="https://t.me/n_plastun" target="_blank">Telegram</a>
-                <a href="mailto:n.plastun94@gmail.com">Email</a>
+                <p>Senior Project Manager (SaaS, B2B, IT Infrastructure)</p>
+                <div class="location-info contact-links">
+                    Удаленка <span class="sep">|</span> <a href="mailto:nikita.plastun@email.com">nikita.plastun@email.com</a> <span class="sep">|</span> <a href="https://www.linkedin.com/in/nikitaplastun" target="_blank">LinkedIn</a> <span class="sep">|</span> <a href="https://t.me/n_plastun" target="_blank">Telegram</a>
+                </div>
             </div>
         </header>
 
         <div class="section">
             <p class="summary">
-                <strong>Project Manager</strong> с опытом более 10 лет в управлении ИТ (B2B SaaS, Web &amp; Mobile) и инфраструктурными проектами. Опыт руководства командами до 60 человек и управления бюджетами до $5M. Специализируюсь на выстраивании прозрачных процессов разработки, повышении маржинальности проектов и ускорении работы команд за счет внедрения современных PM-практик и AI-инструментов.
+                Project Manager с опытом более 11 лет в управлении проектами в сфере B2B SaaS, мобильной разработки и технической инфраструктуры. Управлял бюджетами до $5M и руководил командами до 60 человек. Среди ключевых результатов: подъем маржинальности проектов на 13%, сокращение релизных циклов с месяцев до недель и обеспечение бесперебойной работы сети (99.99%) во время ЧМ-2018.
             </p>
         </div>
 
         <div class="section">
             <h2 class="section-title">Навыки и инструменты</h2>
             <div class="skills-list">
-                <div class="skill-item"><strong>PM &amp; Planning Tools:</strong> Jira, Confluence, MS Project, Google Workspace, Asana, Notion, Miro, Figma</div>
-                <div class="skill-item"><strong>Frameworks:</strong> SDLC, Agile, Hybrid Delivery, Scope &amp; Risk Management, Change Management</div>
-                <div class="skill-item"><strong>Business Operations:</strong> Budgeting, Vendor &amp; Contracts Management, OKRs &amp; Metrics</div>
+                <div class="skill-item"><strong>Управление проектами:</strong> Jira, Confluence, MS Project, Google Workspace, Asana, Notion, Miro, Figma</div>
+                <div class="skill-item"><strong>Процессы и методологии:</strong> SDLC, Agile, гибридные подходы, управление рисками и изменениями</div>
+                <div class="skill-item"><strong>Бизнес и операции:</strong> Бюджетирование, работа с подрядчиками и договорами, OKR, метрики</div>
             </div>
         </div>
 
@@ -240,49 +245,54 @@
             <h2 class="section-title">Опыт работы</h2>
 
             <div class="experience-item">
-                <div class="exp-header"><span class="exp-title">Senior Project Manager</span> <span class="exp-date">07/2025 &ndash; 07/2026</span></div>
-                <div class="exp-company">Minerva Soft | Платформа управления знаниями для корпоративного сектора (B2B SaaS)</div>
+                <div class="exp-header"><span class="exp-title">Senior Project Manager</span> <span class="exp-date">07/2025 - 07/2026</span></div>
+                <div class="exp-company">Minerva Soft | Платформа управления знаниями (B2B SaaS)</div>
                 <ul class="exp-bullets">
-                    <li>Управлял проектом с бюджетом <strong>$5M</strong>, обеспечив своевременную передачу заказчику ключевых функций;</li>
-                    <li>Выстроил процесс эскалации багов с нуля, что сократило время их исправления <strong>с 2 месяцев до 2 недель</strong>;</li>
-                    <li>Оптимизировал процессы релизов, снизив количество инцидентов <strong>на 30%</strong>;</li>
-                    <li>Внедрил AI-инструменты, сократив время на еженедельную документацию и отчетность <strong>с 3 часов до ~40 минут</strong>.</li>
+                    <li>Руководил внедрением и развитием B2B SaaS-продукта для крупного банка РФ с бюджетом $5M.</li>
+                    <li>Сократил время исправления багов с 2 месяцев до 2 недель, спроектировав и внедрив понятный процесс приоритизации и эскалации.</li>
+                    <li>Снизил количество инцидентов при релизах на 30% за счет обновления процесса развертывания и автоматических проверок перед деплоем.</li>
+                    <li>Сократил время на еженедельную отчетность с 3 часов до 40 минут, внедрив AI-инструменты для подготовки документации.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
-                <div class="exp-header"><span class="exp-title">Delivery Manager</span> <span class="exp-date">09/2023 &ndash; 07/2025</span></div>
-                <div class="exp-company">aim digital | Агентство заказной веб- и мобильной разработки</div>
+                <div class="exp-header"><span class="exp-title">Delivery Manager</span> <span class="exp-date">09/2023 - 07/2025</span></div>
+                <div class="exp-company">aim digital | Агентство веб- и мобильной разработки</div>
                 <ul class="exp-bullets">
-                    <li>Оптимизировал процесс передачи задач от дизайна к разработке, повысив рентабельность проектов <strong>на 23%</strong>;</li>
-                    <li>Сократил время публикации приложений <strong>с 1 месяца до 1 недели</strong> за счет отладки процессов разработки и QA.</li>
+                    <li>Из-за отсутствия четкого регламента передачи макетов команда тратила время на переделки - наладил процесс передачи от дизайна в разработку, что позволило увеличить среднюю маржинальность проектов на 13%.</li>
+                    <li>Ускорил релизы мобильных приложений с 1 месяца до 1 недели, перестроив процесс разработки на Agile и наладив связь между Dev и QA.</li>
+                    <li>Вел одновременно 5 проектов по веб- и мобильной разработке, контролируя сроки и качество передачи результатов клиентам.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
-                <div class="exp-header"><span class="exp-title">Program Manager</span> <span class="exp-date">01/2022 &ndash; 08/2023</span></div>
-                <div class="exp-company">ZTE Corporation | Поставщик телекоммуникационного и сетевого оборудования</div>
+                <div class="exp-header"><span class="exp-title">Program Manager</span> <span class="exp-date">01/2022 - 08/2023</span></div>
+                <div class="exp-company">ZTE Corporation | Телеком-оборудование и сетевые решения</div>
                 <ul class="exp-bullets">
-                    <li>Руководил командой из <strong>60+ человек</strong>, завершив инфраструктурный проект <strong>на 2 месяца раньше срока</strong>;</li>
-                    <li>Внедрил стандарты качества для подрядчиков, сократив количество дефектов при приемке <strong>на 60%</strong>.</li>
+                    <li>Управлял командой из 60 инженеров и подрядчиков, реализовав масштабные инфраструктурные проекты на 2 месяца раньше срока.</li>
+                    <li>Снизил число замечаний и дефектов при сдаче объектов на 60%, переработав регламенты приемки и требования к подрядчикам.</li>
+                    <li>Выступал связующим звеном между технической командой и топ-менеджментом, перекладывая технический статус проектов на понятные бизнесу метрики.</li>
                 </ul>
             </div>
 
             <div class="experience-item">
-                <div class="exp-header"><span class="exp-title">Telecom &amp; Infrastructure Project Manager</span> <span class="exp-date">2015 &ndash; 01/2022</span></div>
-                <div class="exp-company">МегаФон | Мобильный оператор BIG-4</div>
+                <div class="exp-header"><span class="exp-title">Telecom &amp; Infrastructure Project Manager</span> <span class="exp-date">2015 - 01/2022</span></div>
+                <div class="exp-company">МегаФон | Телекоммуникации и цифровые сервисы</div>
                 <ul class="exp-bullets">
-                    <li>Руководил организацией мобильной связи к <strong>2018 FIFA World Cup</strong>, обеспечив надежность сети <strong>99.99%</strong>;</li>
-                    <li>Стандартизировал работу с документацией, сократив сроки сдачи коммерческих объектов <strong>на 15%</strong>.</li>
+                    <li>Развертывание сети к ЧМ-2018: руководил запуском и настройкой мобильной сети на стадионах, справившись с пиковыми нагрузками и выдержав доступность сети на уровне 99.99%.</li>
+                    <li>Сократил время запуска объектов на 15% за счет внедрения единых регламентов по подготовке технической документации.</li>
+                    <li>Провел через полный цикл более 1 000 проектов по строительству и модернизации базовых станций - от бюджета до ввода в эксплуатацию.</li>
                 </ul>
             </div>
         </div>
+
+        <div class="page-break"></div>
 
         <div class="section">
             <h2 class="section-title">Сертификаты</h2>
             <div class="skills-list">
                 <div class="skill-item">
-                    <strong><a href="https://coursera.org/share/091e4f8512b8ff1e932cdcef01a6e05b" target="_blank">Google Project Management Professional Certificate</a></strong> &mdash; Google / Coursera (2023)
+                    <strong><a href="https://coursera.org/share/091e4f8512b8ff1e932cdcef01a6e05b" target="_blank">Google Project Management Professional Certificate</a></strong> - Google / Coursera (2023)
                 </div>
             </div>
         </div>
@@ -290,12 +300,19 @@
         <div class="section">
             <h2 class="section-title">Образование</h2>
             <div class="education-item-block">
-                <div class="edu-header"><span class="edu-title">Уральский федеральный университет</span> <span class="edu-date">2011 &ndash; 2017</span></div>
-                <div class="edu-sub">Бакалавриат и магистратура: Инфокоммуникационные технологии и системы связи</div>
+                <div class="edu-header"><span class="edu-title">Уральский федеральный университет</span> <span class="edu-date">2011 - 2017</span></div>
+                <div class="edu-sub">Бакалавр и Магистр: «Инфокоммуникационные технологии и системы связи»</div>
             </div>
             <div class="education-item-block">
-                <div class="edu-header"><span class="edu-title">Уральский федеральный университет</span> <span class="edu-date">2016 &ndash; 2017</span></div>
-                <div class="edu-sub">Диплом о профессиональной переподготовке: Экономика и международный менеджмент</div>
+                <div class="edu-header"><span class="edu-title">Уральский федеральный университет</span> <span class="edu-date">2016 - 2017</span></div>
+                <div class="edu-sub">Диплом о профессиональной переподготовке: «Экономика и управление международным бизнесом»</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Языки</h2>
+            <div class="skills-list">
+                <div class="skill-item"><strong>Английский:</strong> B2 (Upper-Intermediate)</div>
             </div>
         </div>
     </div>
